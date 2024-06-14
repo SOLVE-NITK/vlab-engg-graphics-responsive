@@ -23,15 +23,15 @@ const data = [
     title: "Draw the front view of Pyramid",
     questions: [
       {
-        question: "Number of edges in a pyramid?",
+        question: "Number of edges in square pyramid________",
         options: ["6", "7", "8", "5"],
         answer: 2,
         buttonClass: "btnPyramid",
       },
       {
-        question: "Number of vertices in a pentagon?",
+        question: "Number of vertices in a square pyramid_________",
         options: ["4", "6", "5", "7"],
-        answer: 1,
+        answer: 2,
         buttonClass: "btnA",
       },
     ],
@@ -41,9 +41,9 @@ const data = [
     title: "Draw the top view of Pyramid",
     questions: [
       {
-        question: "What is the inclination angle to the HP(θ)",
+        question: "Angle of inclination of the axis wrt VP?",
         options: ["30", "45", "60", "90"],
-        answer: 0,
+        answer: 1,
         buttonClass: "btnC",
       },
     ],
@@ -53,9 +53,9 @@ const data = [
     title: "Draw the apparent top view of Pyramid",
     questions: [
       {
-        question: "What is the inclination angle to the VP(α)",
-        options: ["30", "45", "60", "90"],
-        answer: 2,
+        question: "What is another name for a square pyramid?",
+        options: ["Pentahedron", "Decahedron", "octahedron", "hexahedron"],
+        answer: 0,
         buttonClass: "btnB",
       },
     ],
@@ -65,9 +65,9 @@ const data = [
     title: "Draw the apparent front view of Pyramid",
     questions: [
       {
-        question: "What is the inclination angle to the VP(α)",
-        options: ["30", "45", "60", "90"],
-        answer: 2,
+        question: "Number of faces in square pyramid?",
+        options: ["3", "5", "6", "9"],
+        answer: 1,
         buttonClass: "btnD",
       },
     ],
@@ -77,14 +77,9 @@ const data = [
     title: "Draw the front view when axis of pyramid is inclined to Vp by α",
     questions: [
       {
-        question: "The Top view of an object is viewed on which plane?",
-        options: [
-          "Horizontal Plane",
-          "Parallel Plane",
-          "Vertical Plane",
-          "Profile Plane",
-        ],
-        answer: 0,
+        question: "The top vertex or point of the pyramid is called",
+        options: ["Base", "Lateral faces", "Apex", "Edge"],
+        answer: 2,
         buttonClass: "btnE",
       },
     ],
@@ -111,14 +106,14 @@ const data = [
     title: "Draw the final top view as required",
     questions: [
       {
-        question: "The Top view of an object is viewed on which plane?",
+        question: "The front view of an object is viewed on which plane?",
         options: [
           "Horizontal Plane",
           "Parallel Plane",
           "Vertical Plane",
           "Profile Plane",
         ],
-        answer: 0,
+        answer: 2,
         buttonClass: "btnG",
       },
     ],
