@@ -17,7 +17,7 @@ const experiments = [
   {
     title: "Projection of Lines - Simple Position",
     path: "exp-simple-positions-nitk",
-    number: 3,
+    number: 4,
   },
 ];
 const row = document.querySelector(".row");
