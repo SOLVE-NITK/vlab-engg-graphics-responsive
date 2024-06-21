@@ -14,6 +14,11 @@ const experiments = [
     path: "exp-projections-of-solids-nitk",
     number: 3,
   },
+  {
+    title: "Projection of Lines - Simple Position",
+    path: "exp-simple-positions-nitk",
+    number: 3,
+  },
 ];
 const row = document.querySelector(".row");
 const search = document.querySelector(".search");
