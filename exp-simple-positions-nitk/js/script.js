@@ -4,18 +4,19 @@ let data = [
     title: "Draw the axis and name VP & HP",
     questions: [
       {
-        question: "Question",
-        options: ["1", "2", "3", "4"],
-        answer: 0,
+        question: "The type of projection discussed here is related to",
+        options: ["Planes", "Points", "Lines", "Solid"],
+        answer: 2,
         buttonClass: "btnAxis",
         circle: null,
         circleText: null,
         func: null,
       },
       {
-        question: "Question",
-        options: ["1", "2", "3", "4"],
-        answer: 0,
+        question:
+          "A line thickness of ____ indicates geometry out-lines in a grid sheet.",
+        options: ["0.5 mm", "1 mm", "1.5 mm", "2 mm"],
+        answer: 3,
         buttonClass: "btnVPHP",
         circle: null,
         circleText: null,
@@ -28,9 +29,14 @@ let data = [
     title: "Draw the line",
     questions: [
       {
-        question: "Question",
-        options: ["6", "7", "8", "5"],
-        answer: 2,
+        question: "Which of the following is a line.",
+        options: [
+          "A one dimensinal object",
+          "A two-dimensional object",
+          "A three-dimensional object",
+          "none of the options",
+        ],
+        answer: 3,
         buttonClass: "btnLine",
         circle: null,
         circleText: null,
@@ -43,9 +49,15 @@ let data = [
     title: "Extend a",
     questions: [
       {
-        question: "Question",
-        options: ["1", "2", "3", "4"],
-        answer: 0,
+        question:
+          "If a line is parallel to both the horizontal plane and vertical plane then that line is ____________",
+        options: [
+          "parallel to profile plane",
+          "lies on profile plane",
+          "perpendicular to profile plane",
+          "inclined to profile plane",
+        ],
+        answer: 2,
         buttonClass: "btnaDash",
         circle: { x: 280, y: 200 },
         circleText: "a'",
@@ -58,18 +70,30 @@ let data = [
     title: "Draw the lines with true length and angles given",
     questions: [
       {
-        question: "Question",
-        options: ["1", "2", "3", "4"],
-        answer: 0,
+        question:
+          "If the line AB is inclined to the Vertical Plane and parallel to the Horizontal Plane, then which of the following statements is always CORRECT?",
+        options: [
+          "True Length of AB = Plan Length of AB",
+          "True Length of AB ≠ Plan Length of AB",
+          "True Length of AB > Elevation Length of AB",
+          "True Length of AB = Elevation Length of AB",
+        ],
+        answer: 2,
         buttonClass: "btna",
         circle: { x: 280, y: 295 },
         circleText: "a",
         func: b,
       },
       {
-        question: "Question",
-        options: ["1", "2", "3", "4"],
-        answer: 0,
+        question:
+          "If the line AB is inclined to H.P., then its plan will______.",
+        options: [
+          "be perpendicular to XY line",
+          "be parallel to XY line",
+          "show the true length",
+          "None of the option",
+        ],
+        answer: 1,
         buttonClass: "btnbOneDash",
         circle: { x: 418, y: 70 },
         circleText: "b1'",
@@ -82,8 +106,9 @@ let data = [
     title: "Join b1' to locus of a'",
     questions: [
       {
-        question: "Question",
-        options: ["1", "2", "3", "4"],
+        question:
+          "If a line PQ lies on a horizontal plane and the vertical plane then which of the following view gives a point?",
+        options: ["Side view", "Top view", "Front view", "Isometric view"],
         answer: 0,
         buttonClass: "btnThetaOne",
         circle: { x: 428, y: 280 },
@@ -97,9 +122,15 @@ let data = [
     title: "Taking ab1 as radius draw arc to locus of b",
     questions: [
       {
-        question: "Question",
-        options: ["1", "2", "3", "4"],
-        answer: 0,
+        question:
+          "If a line is parallel to V.P., then its top view will be ________ to XY line.",
+        options: [
+          "perpendicular",
+          "parallel",
+          "inclined",
+          "None of the options",
+        ],
+        answer: 1,
         buttonClass: "btnB",
         circle: { x: 375, y: 398 },
         circleText: "b",
@@ -112,9 +143,15 @@ let data = [
     title: "Join a and b to get top view",
     questions: [
       {
-        question: "Question",
-        options: ["1", "2", "3", "4"],
-        answer: 0,
+        question:
+          "If a line CD is parallel to H.P., then its front will be ________ to XY line.",
+        options: [
+          "perpendicular",
+          "parallel",
+          "inclined",
+          "None of the options",
+        ],
+        answer: 1,
         buttonClass: "btnBOne",
         circle: { x: 415, y: 398 },
         circleText: "b1",
@@ -127,9 +164,15 @@ let data = [
     title: "Similary join b2 to locus of a",
     questions: [
       {
-        question: "Question",
-        options: ["1", "2", "3", "4"],
-        answer: 0,
+        question:
+          "If the front view of the line AB is parallel to the XY line, then its true length is shown in",
+        options: [
+          "Front View",
+          "Top View",
+          "Side View",
+          "Both Front View and Top View",
+        ],
+        answer: 3,
         buttonClass: "btnThetaTwo",
         circle: { x: 470, y: 180 },
         circleText: "⨀",
@@ -142,8 +185,14 @@ let data = [
     title: "Taking a'b2'as radius draw arc to locus of b'",
     questions: [
       {
-        question: "Question",
-        options: ["1", "2", "3", "4"],
+        question:
+          "If the true inclinations  and the apparent of a line with respect to HP are equal, the line is",
+        options: [
+          "Parallel to the horizontal plane(HP)",
+          "Parallel to the vertical plane(VP)",
+          "Parallel to profile plane(PP)",
+          "Inclined to both reference planes",
+        ],
         answer: 0,
         buttonClass: "btnBDash",
         circle: { x: 375, y: 70 },
