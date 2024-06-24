@@ -36,7 +36,7 @@ let data = [
           "A three-dimensional object",
           "none of the options",
         ],
-        answer: 3,
+        answer: 0,
         buttonClass: "btnLine",
         circle: null,
         circleText: null,
