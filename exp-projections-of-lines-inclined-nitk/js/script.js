@@ -14,9 +14,9 @@ let data = [
       },
       {
         question:
-          "A line thickness of ____ indicates geometry out-lines in a grid sheet.",
+          "A line thickness of ____ indicates dimension lines in a grid sheet.",
         options: ["0.5 mm", "1 mm", "1.5 mm", "2 mm"],
-        answer: 3,
+        answer: 1,
         buttonClass: "btnVPHP",
         circle: null,
         circleText: null,
@@ -50,14 +50,14 @@ let data = [
     questions: [
       {
         question:
-          "If a line is parallel to both the horizontal plane and vertical plane then that line is ____________",
+          "If a line AB is inclined at 45º to the HP and 30º to the VP, its front view is inclined at",
         options: [
-          "parallel to profile plane",
-          "lies on profile plane",
-          "perpendicular to profile plane",
-          "inclined to profile plane",
+          "30º to XY",
+          "45º to XY",
+          "Between 30º and 45º",
+          "Greater than 45º",
         ],
-        answer: 2,
+        answer: 3,
         buttonClass: "btnaDash",
         circle: { x: 280, y: 200 },
         circleText: "a'",
@@ -71,12 +71,12 @@ let data = [
     questions: [
       {
         question:
-          "If the line AB is inclined to the Vertical Plane and parallel to the Horizontal Plane, then which of the following statements is always CORRECT?",
+          "If a line is inclined at 30º to the HP and 60º to the VP, at an what angle its front and top views are inclined",
         options: [
-          "True Length of AB = Plan Length of AB",
-          "True Length of AB ≠ Plan Length of AB",
-          "True Length of AB > Elevation Length of AB",
-          "True Length of AB = Elevation Length of AB",
+          "30º and 60º to XY respectively",
+          "60º and 30º to XY respectively",
+          "Both at 90º to XY",
+          "Both greater than 30º but less than 90º",
         ],
         answer: 2,
         buttonClass: "btna",
@@ -85,8 +85,7 @@ let data = [
         func: b,
       },
       {
-        question:
-          "If the line AB is inclined to H.P., then its plan will______.",
+        question: "If a line CD is inclined to V.P., its elevation will______.",
         options: [
           "be perpendicular to XY line",
           "be parallel to XY line",
@@ -107,9 +106,9 @@ let data = [
     questions: [
       {
         question:
-          "If a line PQ lies on a horizontal plane and the vertical plane then which of the following view gives a point?",
+          "A line BC is on the horizontal plane inclined to a vertical plane at 45 degrees, which view from the following gives the actual length of the line BC?",
         options: ["Side view", "Top view", "Front view", "Isometric view"],
-        answer: 0,
+        answer: 1,
         buttonClass: "btnThetaOne",
         circle: { x: 428, y: 280 },
         circleText: "⨀",
@@ -123,14 +122,14 @@ let data = [
     questions: [
       {
         question:
-          "If a line is parallel to V.P., then its top view will be ________ to XY line.",
+          "If a line RS lies on both vertical and horizontal planes then which of the following two views coincides to give a line again?",
         options: [
-          "perpendicular",
-          "parallel",
-          "inclined",
+          "Front, Top",
+          "Side, Isometric",
+          "Top, Side",
           "None of the options",
         ],
-        answer: 1,
+        answer: 0,
         buttonClass: "btnB",
         circle: { x: 375, y: 398 },
         circleText: "b",
@@ -144,14 +143,9 @@ let data = [
     questions: [
       {
         question:
-          "If a line CD is parallel to H.P., then its front will be ________ to XY line.",
-        options: [
-          "perpendicular",
-          "parallel",
-          "inclined",
-          "None of the options",
-        ],
-        answer: 1,
+          "Let's take a line CD. CD can’t be perpendicular to two perpendicular planes at the same time.",
+        options: ["True", "False"],
+        answer: 0,
         buttonClass: "btnBOne",
         circle: { x: 415, y: 398 },
         circleText: "b1",
@@ -165,14 +159,14 @@ let data = [
     questions: [
       {
         question:
-          "If the front view of the line AB is parallel to the XY line, then its true length is shown in",
+          "When the front view of the line CD having a length which is less than the original length, then which of the following is correct?",
         options: [
-          "Front View",
-          "Top View",
-          "Side View",
-          "Both Front View and Top View",
+          "The line is inclined to H.P.",
+          "The line is inclined to V.P",
+          "The line is inclined to both H.P. and V.P.",
+          "None of the options",
         ],
-        answer: 3,
+        answer: 1,
         buttonClass: "btnThetaTwo",
         circle: { x: 470, y: 180 },
         circleText: "⨀",
@@ -186,13 +180,8 @@ let data = [
     questions: [
       {
         question:
-          "If the true inclinations  and the apparent of a line with respect to HP are equal, the line is",
-        options: [
-          "Parallel to the horizontal plane(HP)",
-          "Parallel to the vertical plane(VP)",
-          "Parallel to profile plane(PP)",
-          "Inclined to both reference planes",
-        ],
+          "In the second quadrant, a point is above H.P and behind V.P.",
+        options: ["True", "False", "Can't say", "Neither"],
         answer: 0,
         buttonClass: "btnBDash",
         circle: { x: 375, y: 70 },
@@ -207,14 +196,14 @@ let data = [
     questions: [
       {
         question:
-          "If the true inclinations  and the apparent of a line with respect to HP are equal, the line is",
+          "If a line is paralel to VP and inclined at an angle to horizontal plane, the projection of the line will be its True length is ______",
         options: [
-          "Parallel to the horizontal plane(HP)",
-          "Parallel to the vertical plane(VP)",
-          "Parallel to profile plane(PP)",
-          "Inclined to both reference planes",
+          "H.P.",
+          "V.P.",
+          "Neither vertical nor horizontal plane",
+          "Both vertical and horizontal plane",
         ],
-        answer: 0,
+        answer: 1,
         buttonClass: "btnTrace",
         circle: null,
         circleText: null,
@@ -227,15 +216,14 @@ let data = [
     title: "Extend a",
     questions: [
       {
-        question:
-          "If the true inclinations  and the apparent of a line with respect to HP are equal, the line is",
+        question: " Horizontal trace of a line exists when the line is",
         options: [
           "Parallel to the horizontal plane(HP)",
-          "Parallel to the vertical plane(VP)",
+          "Inclined to horizontal plane(HP)",
           "Parallel to profile plane(PP)",
           "Inclined to both reference planes",
         ],
-        answer: 0,
+        answer: 1,
         buttonClass: "btnH",
         circle: null,
         circleText: null,
@@ -248,15 +236,14 @@ let data = [
     title: "Draw a perpendicular line to join the plane",
     questions: [
       {
-        question:
-          "If the true inclinations  and the apparent of a line with respect to HP are equal, the line is",
+        question: "If top view of a line is a point, its front view is ",
         options: [
-          "Parallel to the horizontal plane(HP)",
-          "Parallel to the vertical plane(VP)",
-          "Parallel to profile plane(PP)",
-          "Inclined to both reference planes",
+          " Parallel to xy line and of true length",
+          "Parallel to xy line and of apparent length",
+          "Perpendicular to xy line and true length",
+          "Perpendicular to xy line and of apparent length",
         ],
-        answer: 0,
+        answer: 2,
         buttonClass: "btnV",
         circle: null,
         circleText: null,
