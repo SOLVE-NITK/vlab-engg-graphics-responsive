@@ -19,6 +19,11 @@ const experiments = [
     path: "exp-simple-positions-nitk",
     number: 4,
   },
+  {
+    title: "Projection of lines inclined to both planes",
+    path: "exp-projections-of-lines-inclined-nitk",
+    number: 4,
+  },
 ];
 const row = document.querySelector(".row");
 const search = document.querySelector(".search");

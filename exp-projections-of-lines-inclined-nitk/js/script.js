@@ -36,7 +36,7 @@ let data = [
           "A three-dimensional object",
           "none of the options",
         ],
-        answer: 0,
+        answer: 3,
         buttonClass: "btnLine",
         circle: null,
         circleText: null,
@@ -201,6 +201,69 @@ let data = [
       },
     ],
   },
+  {
+    step: 10,
+    title: "Trace",
+    questions: [
+      {
+        question:
+          "If the true inclinations  and the apparent of a line with respect to HP are equal, the line is",
+        options: [
+          "Parallel to the horizontal plane(HP)",
+          "Parallel to the vertical plane(VP)",
+          "Parallel to profile plane(PP)",
+          "Inclined to both reference planes",
+        ],
+        answer: 0,
+        buttonClass: "btnTrace",
+        circle: null,
+        circleText: null,
+        func: hhhh,
+      },
+    ],
+  },
+  {
+    step: 11,
+    title: "Extend a",
+    questions: [
+      {
+        question:
+          "If the true inclinations  and the apparent of a line with respect to HP are equal, the line is",
+        options: [
+          "Parallel to the horizontal plane(HP)",
+          "Parallel to the vertical plane(VP)",
+          "Parallel to profile plane(PP)",
+          "Inclined to both reference planes",
+        ],
+        answer: 0,
+        buttonClass: "btnH",
+        circle: null,
+        circleText: null,
+        func: ha,
+      },
+    ],
+  },
+  {
+    step: 12,
+    title: "Draw a perpendicular line to join the plane",
+    questions: [
+      {
+        question:
+          "If the true inclinations  and the apparent of a line with respect to HP are equal, the line is",
+        options: [
+          "Parallel to the horizontal plane(HP)",
+          "Parallel to the vertical plane(VP)",
+          "Parallel to profile plane(PP)",
+          "Inclined to both reference planes",
+        ],
+        answer: 0,
+        buttonClass: "btnV",
+        circle: null,
+        circleText: null,
+        func: v,
+      },
+    ],
+  },
 ];
 const quizDiv = document.querySelector(".quiz-div");
 const questionDiv = document.querySelector(".question");
@@ -241,6 +304,12 @@ const btnThetaTwo = document.querySelector(".btn-theta-two");
 btnThetaTwo.addEventListener("click", b22);
 const btnBDash = document.querySelector(".btn-b-dash");
 btnBDash.addEventListener("click", bbb);
+const btnTrace = document.querySelector(".btn-trace");
+btnTrace.addEventListener("click", hhhh);
+const btnH = document.querySelector(".btn-h");
+btnH.addEventListener("click", ha);
+const btnV = document.querySelector(".btn-v");
+btnV.addEventListener("click", v);
 
 const btnNext = document.querySelector(".btn-next");
 btnNext.addEventListener("click", nextStep);
@@ -611,6 +680,66 @@ function bbb() {
   ctx.closePath();
   btnBDash.classList.add("hide");
   circle1 = new Path2D();
+  nextQuestion();
+}
+
+function hhhh() {
+  ctx.beginPath();
+  ctx.arc(265, 250, 3, 0, 2 * Math.PI, false);
+  ctx.fill();
+  ctx.moveTo(300, 200);
+  ctx.lineTo(250, 271);
+  ctx.stroke();
+  ctx.closePath();
+  ctx.font = "14px comic sans MS";
+  ctx.fillText("h", 285, 240);
+  btnTrace.classList.add("hide");
+  circle1 = new Path2D();
+  nextQuestion();
+}
+
+function ha() {
+  ctx.beginPath();
+  ctx.arc(250, 250, 3, 0, 2 * Math.PI, false);
+  ctx.fill();
+  ctx.moveTo(300, 300);
+  ctx.lineTo(250, 250);
+  ctx.stroke();
+  ctx.font = "14px comic sans MS";
+  ctx.fillText("v", 230, 240);
+  ctx.closePath();
+  btnH.classList.add("hide");
+  circle1 = new Path2D();
+  nextQuestion();
+}
+function v() {
+  ctx.beginPath();
+  ctx.arc(250, 271, 3, 0, 2 * Math.PI, false);
+  ctx.fill();
+  ctx.moveTo(250, 271);
+  ctx.lineTo(250, 250);
+  ctx.stroke();
+  ctx.closePath();
+  ctx.beginPath();
+  ctx.moveTo(250, 93);
+  ctx.lineTo(250, 370);
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.arc(265, 265, 3, 0, 2 * Math.PI, false);
+  ctx.fill();
+  ctx.moveTo(265, 250);
+  ctx.lineTo(265, 265);
+  ctx.closePath();
+  ctx.beginPath();
+  ctx.moveTo(265, 93);
+  ctx.lineTo(265, 370);
+  ctx.stroke();
+  btnV.classList.add("hide");
+  circle1 = new Path2D();
+  ctx.font = "14px comic sans MS";
+  ctx.fillText("HT", 220, 270);
+  ctx.fillText("VT", 275, 270);
+  ctx.closePath();
   nextQuestion();
 }
 
